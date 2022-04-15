@@ -1,14 +1,14 @@
 #### Project Setup
 01. install npm
 02. install Material UI
- yarn add @mui/material @emotion/react @emotion/styled
- yarn add @mui/material @mui/styled-engine-sc styled-components
+ 'yarn add @mui/material @emotion/react @emotion/styled'
+ 'yarn add @mui/material @mui/styled-engine-sc styled-components'
 03. install sass styles
- yarn add sass
+ 'yarn add sass'
 04. install SVG icons
- yarn add @mui/icons-material
+ 'yarn add @mui/icons-material'
 05. install country flags
- yarn add react-country-flag
+ 'yarn add react-country-flag'
 
 
 
