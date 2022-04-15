@@ -1,0 +1,51 @@
+$primary : #0088DD;
+$primary-hover : #153D8A;
+
+.main-menu {
+    .nav-link {
+        color: $primary !important;
+        position: relative;
+    }
+
+    .nav-link:after {
+        color: $primary-hover !important;
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .nav-link:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      .btn-icon{
+          background-color: rgba($color: $primary, $alpha: 0.15);
+      }
+      .navbar-toggler:hover{
+        border-color: $primary;
+      }
+      .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.01rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-menu {
+        .navbrand-img{
+            width: 200px;
+        }
+    }
+}
+@media (max-width: 295px) {
+    .main-menu {
+        .navbrand-img{
+            width: 150px;
+        }
+    }
+}
